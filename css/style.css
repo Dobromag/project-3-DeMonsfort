@@ -1,0 +1,442 @@
+:root {
+    --color1: #e53935;
+    --color2: #fff;
+    --color3: #000;
+}
+
+.navbar .nav-item .nav-link {
+    color: #000;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0);
+}
+
+.navbar .nav-item .nav-link:hover {
+    background: rgba(34, 34, 34, 0);
+    color: #e53935;
+}
+
+/* Choose your programme */
+.chooseprogram {
+    background: linear-gradient(white 45%, #D6D6D6 43%, #D6D6D6 91%, white 91%);
+}
+
+.main-block-programme {
+    display: grid;
+    gap: 20px;
+}
+
+.select-programme {
+    display: grid;
+    gap: 20px;
+}
+
+.select-programme select {
+    border-radius: 10px;
+    border: 5px #fff solid;
+    color: #9c9595;
+    padding-left: 10px;
+    appearance: none;
+}
+
+.select-programme-button button {
+    width: 200px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px #E53935;
+    background-color: #E53935;
+    color: #fff;
+}
+
+.select-programme-button button:hover {
+    transition: 0.5s;
+    background: #C5211D;
+}
+
+.main-programme {
+    display: grid;
+    align-content: center;
+    justify-items: start;
+}
+
+.main-accordion {
+    background-image: url(https://dmuk.edu.kz/wp-content/uploads/2022/08/Rectangle-8.png);
+    width: 100%;
+    height: 520px;
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.block-apply-accordion {
+    background: rgba(183, 28, 28, 0.8);
+    position: relative;
+    padding: 59px 30px;
+    overflow: hidden;
+    height: 0px;
+    clip-path: polygon(0% 0%, 100% 40%, 100% 110%, 0% 100%);
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.block-apply-accordion::before {
+    content: '>';
+    position: absolute;
+    top: 43%;
+    left: 230px;
+    transform: rotate(-94deg);
+    font-size: 20px;
+    transition: 1s;
+
+}
+
+.main-accordion.active .block-apply-accordion::before {
+    content: '>';
+    position: absolute;
+    transform: rotate(90deg);
+    transition: 1s;
+
+}
+
+.main-accordion .block-apply-item {
+    position: relative;
+    background: rgba(183, 28, 28, 0.8);
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    transition: all 1s ease 0s;
+}
+
+.main-accordion.active .block-apply-item {
+    height: 180px;
+    transition: 0.3s ease-in-out;
+    transition: all 1s ease 0s;
+}
+
+.main-accordion .button-consult {
+    background-color: var(--color1);
+    color: var(--color2);
+    border: 1px solid var(--color2);
+    border-radius: 5px;
+    width: 131px;
+    margin-right: 10px;
+    padding: 7px;
+}
+
+.main-accordion .button-consult:hover {
+    background-color: var(--color2);
+    color: var(--color1);
+}
+
+/* centre_for_english */
+.centre_for_english ul {
+    list-style: none;
+}
+
+.centre_for_english ul li {}
+
+.centre_for_english ul li::before {
+    content: '✓';
+    color: #fff;
+}
+
+.centre_for_english_button button {
+    border: 1px var(--color2) solid;
+    border-radius: 5px;
+    background-color: unset;
+    padding: 11px 30px;
+    color: #fff;
+}
+
+.centre_for_english_button button:hover {
+    background: #fff;
+    transition: 0.5s;
+    color: #370C8B;
+}
+
+/* Student Life at DMUK */
+.student_life img {
+    width: 250px;
+    max-width: 100%;
+}
+
+.student_life p {
+    padding: 15px 0px 10px 0px
+}
+
+/* Events */
+.events-main {
+    max-width: 100%;
+}
+
+.events-upcoming {
+    height: 380px;
+    max-height: 100%;
+    background-size: cover;
+    background-position-x: -60px;
+    width: 260px;
+    border: none;
+    border-radius: 20px;
+    max-width: 100%;
+    display: grid;
+    align-content: space-between;
+}
+
+.events-upcoming-data {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+.events-upcoming-link {
+    display: grid;
+    margin-bottom: 45px;
+    justify-items: start;
+    padding: 0px 25px 0px 25px;
+}
+
+.events-upcoming-link a {
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--color2);
+}
+
+.events-upcoming-link a:hover {
+    text-decoration: underline;
+}
+
+.data-month {
+    background: var(--color1);
+    border-radius: 0px 2px 2px 0px;
+    padding: 5px 10px 5px 45px;
+}
+
+.data-number {
+    padding-right: 25px;
+}
+
+
+.events-upcoming-1 {
+    background-image: url(../img/events/people.jpg);
+}
+
+.events-upcoming-2 {
+    background-image: url(../img/events/01.jpg);
+}
+
+.events-upcoming-3 {
+    background-image: url(../img/events/open_day_postgraduate.jpg);
+}
+
+.events-upcoming-4 {
+    background-image: url(../img/events/open_day_postgraduate.jpg);
+}
+
+.events-upcoming-5 {
+    background-image: url(../img/events/2022-11-11_next_in_art-300x400.jpg);
+}
+
+.events-upcoming-scroll {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    height: 430px !important;
+}
+
+
+.events-upcoming-scroll::-webkit-scrollbar {
+    height: 19px;
+    /* высота для горизонтального скролла */
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.events-upcoming-scroll::-webkit-scrollbar-thumb {
+    background-color: #fc0707;
+    border-radius: 9em;
+    box-shadow: inset 1px 1px 10px #e91616;
+}
+
+/* news */
+.news {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+}
+
+.news_main {
+    padding-right: 45px;
+    padding-bottom: 50px;
+    display: grid;
+    gap: 5px;
+}
+
+.news_img {
+    height: 200px;
+    width: 350px;
+    padding-bottom: 20px;
+}
+
+.news_main h5 {
+    color: #555;
+}
+
+.news_main a {
+    padding: 5px;
+    background: #E53935 !important;
+    width: 100px;
+    color: var(--color2);
+    display: flex;
+    justify-content: center;
+    border-radius: 8px !important;
+    text-decoration: none;
+}
+
+.news::-webkit-scrollbar {
+    height: 19px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.news::-webkit-scrollbar-thumb {
+    background-color: #fc0707;
+    border-radius: 9em;
+    box-shadow: inset 1px 1px 10px #e91616;
+}
+/* footer */
+.main_social {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: flex-start;
+    padding: 0px;
+    margin-right: 10px;
+}
+
+footer h4 {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.main_social li {
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+footer .line::before {
+    content: " ";
+    height: 1px;
+    margin: 1rem 0;
+    color: inherit;
+    background-color: currentColor;
+    border: 0;
+    opacity: 0.25;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .right-block {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
+
+
+/* strelka */
+/* strelka-red */
+.strelka-red {
+    color: var(--color1);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.strelka-red::after {
+    content: '>';
+    color: var(--color1);
+    font-weight: 600;
+}
+
+.strelka-red:hover {
+    color: var(--color1);
+    text-decoration: underline;
+}
+
+.strelka-red::after:hover {
+    content: '>';
+    color: var(--color1);
+    font-weight: 600;
+}
+
+/* strelka-white */
+.strelka-white {
+    color: var(--color2);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.strelka-white::after {
+    content: '>';
+    color: var(--color2);
+    font-weight: 600;
+}
+
+.strelka-white:hover {
+    color: var(--color2);
+    text-decoration: underline;
+}
+
+.strelka-white::after:hover {
+    content: '>';
+    color: var(--color2);
+    font-weight: 600;
+}
+
+
+/* my-auto */
+.blockmob {
+    padding: 3rem;
+}
+
+.blockmob3 {
+    padding: 30px 0px;
+}
+
+.my-auto {
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+}
+
+/* Цвет */
+.color1 {
+    color: var(--color1);
+}
+
+.color2 {
+    color: var(--color2);
+}
+
+.color3 {
+    color: var(--color3);
+}
+
+.bg1 {
+    background-color: var(--color1);
+}
+
+.bg2 {
+    background-color: var(--color2);
+}
+
+.bg3 {
+    background-color: var(--color3);
+}
